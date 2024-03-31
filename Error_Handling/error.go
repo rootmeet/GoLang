@@ -6,11 +6,13 @@ import (
 )
 
 func main() {
-	message := "Hello Error"
+	message := "Programming"
 
 	myError := errors.New("Wrong Message")
 
-	if message != "Programming" {
+	if message == "Programming" {
+		fmt.Println(message)
+	} else {
 		fmt.Println(myError)
 	}
 }
